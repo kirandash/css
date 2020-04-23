@@ -1,1 +1,17 @@
 /* Styles for Single Level Menu */
+
+@media screen and (min-width: 30em) {
+
+    .single-nav ul {
+        display: flex; /* default setting for flex: align items to left and show them one after another. */
+        /* justify-content: flex-end; */ /* To move items to right while keeping the order unlike Float */
+        /* justify-content: center; */
+        /* justify-content: space-around; */ /* items evenly spaced starting from box */
+        justify-content: space-between; /* space on left and right most side are removed. */
+        flex-wrap: wrap; /* By default items are always shown in single line and for small devices, items gets squished. This makes sure that if there is not enough space then items will get wrapped to next line */
+    }
+    .single-nav ul li {
+        flex: 1 0 auto; /* flex grow by a factor of 1, shrink by a factor of 0, and base's width auto. Thus, if there is empty space then the items will grow to fill it. Thus leaving no empty space. But while shrinking we mentioned 0 which means if there is no space, it will fall to next line. Note: with this prop, justify-content flex-end, flex-end or center will not work. Must remove to get it to work */
+        text-align: center;
+    }
+}
