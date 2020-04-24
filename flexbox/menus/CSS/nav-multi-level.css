@@ -11,11 +11,14 @@
 
 @media screen and (min-width: 30em){
 	.multi-level-nav ul {
-
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between; /* Evenly spaced menu items */
 	}	
 
 	.multi-level-nav li {
 		position: relative;
+		flex: 1 0 auto; /* For flex items to take full space with no gap after the justify-content */
 	}
 
 	li.has-children > a {
@@ -29,11 +32,12 @@
 	}
 
 	.multi-level-nav ul ul li {
-        
+        flex: 1 1 auto; /* Allowing flex item in drop down to grow if wide content or even shrink if content is narrow. So it can drop to next line */
 	}
 
 	.multi-level-nav ul .toggled-on {
-		display: block;
+		/* display: block; */ /* Dropdown items take width of widest menu item. */
+		display: flex; /* Dropdown items to take full width of parent */
 	}
 
 	.dropdown-toggle {
