@@ -19,3 +19,8 @@
 5. `flex-wrap: wrap;` By default items are always shown in single line and for small devices, items gets squished. This makes sure that if there is not enough space then items will get wrapped to next line
 6. `flex: 1 0 auto;`: while doing justify-content adjustments ex: space-around and space-between: there is some empty space in between items. Solve this by adding: flex grow by a factor of 1, shrink by a factor of 0, and base's width auto. Thus, if there is empty space then the items will grow to fill it. Thus leaving no empty space. But while shrinking we mentioned 0 which means if there is no space, it will fall to next line.
     - justify-content: flex-end, flex-start or center will not work with flex: 1 0 auto. Must remove
+
+### 2.2 Advanced Menus with nested flex
+1. Implement nested flex.
+2. `flex: 1 0 12em;` Grow 1, shrink 0. Base width: 12em. When menus shrink, li items should never shrink below 12ems of width. If menu item is wider, grow wide as much as possible. If menu item < 12em, menu item should wrap down instead of shrink
+3. `display: flex;` Item inside li tag ie anchor tag should fill up the entire space vertically

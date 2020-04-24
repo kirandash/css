@@ -1,0 +1,34 @@
+/* Styles for Advanced Menu */
+.advanced-nav li a {
+    display: flex;
+    width: 100%; /* Anchor tag should take 100% horizontal width */
+    /* justify-content: flex-start; */ /* Optional : Default setting */
+}
+
+.icon {
+    flex: 0 0 1.5em; /* Grow by factor of 0, shrink by factor of 0 and base width 1.5em. Regardless of flexbox the icon will always be 1.5ems wide */
+    font-size: 1.8em;
+}
+
+.button-text {
+    font-size: 1.8em;
+}
+
+.button-text span {
+    display: block;
+    font-size: 40%;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@media screen and (min-width: 30em) {
+    .advanced-nav ul {
+        display: flex;
+        flex-wrap: wrap; /* By default items are always shown in single line and for small devices, items gets squished. This makes sure that if there is not enough space then items will get wrapped to next line */
+        justify-content: center;
+    }
+    .advanced-nav ul li {
+        flex: 1 0 12em; /* Grow 1, shrink 0. Base width: 12em. When menus shrink, li items should never shrink below 12ems of width. If menu item is wider, grow wide as much as possible. If menu item < 12em, menu item should wrap down instead of shrink */
+        display: flex; /* Item inside li tag ie anchor tag should fill up the entire space vertically */
+    }
+}
