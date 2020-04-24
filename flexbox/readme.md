@@ -39,3 +39,6 @@
 1. nav-social.css
 2. screen-reader-text class for hiding text on visual browsers but can be readable on screen readers. Accessibility purpose.
 3. All icons are shown based on href tag link.
+
+### 2.5 Multiple/Mixed Menus
+1. Multi-level Menu + Social Media Menus. nav-mixed.css
