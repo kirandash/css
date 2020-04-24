@@ -34,3 +34,8 @@
 5. `justify-content: space-between` to evenly space items.
 6. `flex: 1 0 auto;` For flex items to take full space with no gap after the justify-content
 7. `flex: 1 1 auto;` Allowing flex item in drop down to grow if wide content or even shrink if content is narrow. So it can drop to next line
+
+### 2.4 Social Media Menu
+1. nav-social.css
+2. screen-reader-text class for hiding text on visual browsers but can be readable on screen readers. Accessibility purpose.
+3. All icons are shown based on href tag link.
