@@ -42,3 +42,10 @@
 
 ### 2.5 Multiple/Mixed Menus
 1. Multi-level Menu + Social Media Menus. nav-mixed.css
+
+## 3. Card Layouts
+### 3.1 Challenges with Card Layout
+1. Grid / Card layout with floats are not properly cleared or positioned.
+2. Solutions:
+    - Masonry: https://masonry.desandro.com/ Ex: https://www.pinterest.com/
+    - Flexbox
