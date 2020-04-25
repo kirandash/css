@@ -41,13 +41,27 @@ body {
 }
 
 /* Flexbox Styles */
-.cards {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap; /* will wrap below if no space available */
+@media screen and (min-width: 40em){
+	.cards {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap; /* will wrap below if no space available */
+		margin-top: -1em;
+	}
+	
+	.card {
+		flex: 0 1 calc(50% - 1em); /* Grow by a factor of 0. Shrink by a factor of 1 and base width of 33%. Allowed to shrink but not allowed to grow */
+		width: calc(33% - .5m); /* Fallback if width assigned by flex does not work */
+		margin-bottom: 1em;
+	}
 }
 
-.card {
-	flex: 0 1 calc(33% - 1em); /* Grow by a factor of 0. Shrink by a factor of 1 and base width of 33%. Allowed to shrink but not allowed to grow */
-	width: calc(33% - 1em); /* Fallback if width assigned by flex does not work */
+@media screen and (min-width: 60em){
+	.cards {
+		margin-top: inherit; /* 2em from parent */
+	}
+	.card {
+		flex: 0 1 calc(33% - 1em);
+		margin-bottom: 2em;
+	}
 }

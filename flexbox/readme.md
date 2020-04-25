@@ -53,3 +53,5 @@
 ### 3.2 Grid of cards with Flexbox
 1. Flex will make all columns equal height by default. Width can be set by `flex: 0 1 calc(33% - 1em);` Grow by a factor of 0. Shrink by a factor of 1 and base width of 33%. Allowed to shrink but not allowed to grow.
 2. Fallback code: `width: calc(33% - 1em)`
+
+### 3.3 Media Queries
