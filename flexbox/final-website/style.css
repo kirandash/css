@@ -1,0 +1,22 @@
+/*
+The primary stylesheet for the Flexbox Holy Grail layout demo web page. This sheet pulls in all the components in order of appearance.
+*/
+
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+@import url('CSS/holy-grail.css');
+
+/* Menu Style Imports */
+@import url('CSS/nav-base.css');
+@import url('CSS/nav-multi-level.css');
+@import url('CSS/nav-mixed.css');
+@import url('CSS/nav-social.css');
+
+/* Card Style Imports */
+@import url('CSS/card-styles.css');
+
+/* To overwrite existing Styles */
+@import url('CSS/final-website.css');

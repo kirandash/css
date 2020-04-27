@@ -1,0 +1,17 @@
+/* Header Styles */
+.masthead {
+    background: hsl(0, 0%, 90%);
+}
+
+.site-title {
+    color: black;
+}
+
+/* Content Styles */
+.main-area {
+    padding: 2em; /* Breathing space around cards */
+}
+
+.sidebar {
+    background: white; /* Different background for sidebar and content */
+}
