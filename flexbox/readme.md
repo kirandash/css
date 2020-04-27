@@ -87,3 +87,7 @@
 
 ### 5.3 Hiding and Showing the Sidebar
 1. Hiding: `flex: 0 0 0; padding: 0; overflow: hidden;`
+
+### 5.4 Animating content
+1. Add `transition: flex .5s ease, padding .5s ease;` to both show and hide classes. 
+2. But note that while transitioning, the content is also flowing. To fix this: first fade out the text and then slide out box. And reverse when slideing in. Syntax: `property duration transition delay`

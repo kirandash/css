@@ -17,6 +17,7 @@
 	padding: .5em 1.4em 1em;
 	background: hsl(0, 0%, 90%);
 	overflow: hidden; /* To hide the sidebar item when hide class is applied */
+	transition: padding .5s ease, flex .5s ease, color .2s ease-in .3s; /* property duration transition delay */
 }
 
 .example-menu ul {
@@ -114,6 +115,12 @@
 	.hide {
 		flex: 0 0 0; /* Grow by a factor of 0, shrink by a factor of 0 and have a flex basis of 0. Thus hiding the item. But won't hide completely if the item has any padding */
 		padding: 0; /* To remove padding */
+		color: hsla(0, 0%, 0%, 0); /* Transparent text */
+		transition: color .2s ease, flex .5s ease .3s, padding .5s ease .3s; /* property duration transition delay */
+	}
+
+	.hide a {
+		color: hsla(0, 0%, 0%, 0); /* Transparent text */
 	}
 
 }
