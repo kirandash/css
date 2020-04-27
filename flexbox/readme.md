@@ -91,3 +91,6 @@
 ### 5.4 Animating content
 1. Add `transition: flex .5s ease, padding .5s ease;` to both show and hide classes. 
 2. But note that while transitioning, the content is also flowing. To fix this: first fade out the text and then slide out box. And reverse when slideing in. Syntax: `property duration transition delay`
+
+## 6. Final Website
+### 6.1 Combining all Files
