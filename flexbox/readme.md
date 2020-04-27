@@ -59,3 +59,10 @@
 ### 3.4 Solution for "anchor not filling the card" issue
 1. When flex stretches it's children. The anchor tags do not scale. So the card with smaller heights will have areas that is not clickable. Ex: First and 3rd cards in our example.
 2. To solve add `display: flex` to the parent of anchor tag. Which will make anchor fill the full height of card vertically.
+
+## 4. Holy Grail Layout
+### 4.1 What's holy grail layout
+1. Holy Grail : https://alistapart.com/article/holygrail/
+2. Full width header + Equal height columns for content (sidebars + main content) + Full Width Footer
+3. Can be achieved using JS or convoluted CSS or simply using Flexbox
+
