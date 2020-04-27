@@ -55,3 +55,7 @@
 2. Fallback code: `width: calc(33% - 1em)`
 
 ### 3.3 Media Queries
+
+### 3.4 Solution for "anchor not filling the card" issue
+1. When flex stretches it's children. The anchor tags do not scale. So the card with smaller heights will have areas that is not clickable. Ex: First and 3rd cards in our example.
+2. To solve add `display: flex` to the parent of anchor tag. Which will make anchor fill the full height of card vertically.

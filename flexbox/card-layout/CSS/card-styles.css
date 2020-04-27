@@ -5,7 +5,7 @@ body {
 }
 
 .masthead {
-	background: hsl(0, 0%, 20%);`
+	background: hsl(0, 0%, 20%);
 }
 
 .site-title {
@@ -50,6 +50,7 @@ body {
 	}
 	
 	.card {
+		display: flex; /* To fix "anchor not filling the card" issue */
 		flex: 0 1 calc(50% - 1em); /* Grow by a factor of 0. Shrink by a factor of 1 and base width of 33%. Allowed to shrink but not allowed to grow */
 		width: calc(33% - .5m); /* Fallback if width assigned by flex does not work */
 		margin-bottom: 1em;
