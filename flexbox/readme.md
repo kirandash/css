@@ -66,3 +66,5 @@
 2. Full width header + Equal height columns for content (sidebars + main content) + Full Width Footer
 3. Can be achieved using JS or convoluted CSS or simply using Flexbox
 
+### 4.2 Holy Grail layout with Flexbox
+1. Base html: holy-grail.html, Base CSS: style-holy-grail.css

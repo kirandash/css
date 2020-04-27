@@ -45,19 +45,29 @@
 	background: hsl(0, 0%, 75%);
 }
 
+/* Flexbox Styles */
+@media screen and (min-width: 40em) {
+	
+	.outer-wrap {
+		display: flex; /* Makes all children horizontal */
+		flex-direction: column; /* Column flex layout */
+	}
 
+	.content {
+		display: flex; /* To show main content and sidebar horizontally with equal col height */
+	}
 
+	.main-area {
+		flex: 1 1 auto; /* Grow by a factor of 1, shrink by a factor of 1 with min width auto. Means, this section will grow to fill the remaining empty space. */
+	}
 
+	.post-content {
+		max-width: 40em;
+		margin: 0 auto;
+	}
 
+	.sidebar {
+		flex: 0 0 12em; /* Grow by a factor of 0, shrink by a factor of 0 while maintaining a base or min width of 12em regardless of page width */
+	}
 
-
-
-
-
-
-
-
-
-
-
-
+}
