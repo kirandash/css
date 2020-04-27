@@ -80,3 +80,7 @@
 ### 5.1 Sidebar position switching
 1. Add sidebar-switcher.js for adding JS code to add/remove classes.
 2. Change `order` to change position of sidebar.
+
+### 5.2 Changing from Holy Grail to Vertical Display
+1. Add JS code to sidebar-switcher.js
+2. Change `flex-direction: column;` for content and sidebar to stack on top of one another.

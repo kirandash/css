@@ -106,4 +106,8 @@
 		order: 0; /* Makes sidebar come before main-area */
 	}
 
+	.no-sidebar {
+		flex-direction: column; /* Makes flex direction column so that main content and sidebar are stacked on top of one another */
+	}
+
 }

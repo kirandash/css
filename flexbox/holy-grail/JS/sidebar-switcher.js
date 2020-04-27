@@ -10,4 +10,14 @@
             $('.sidebar').removeClass('sidebar-left');
         } // Remove sidebar-left class if it is already applied
     });
+
+    $('a.no-sidebar-toggle').click(function() {
+        // if(!$('.content').hasClass('no-sidebar')) {
+        //     $('.content').addClass('no-sidebar');
+        // } // Add no-sidebar class if it is not already applied
+        // else {
+        //     $('.content').removeClass('no-sidebar');
+        // } // alternative: toggleClass
+        $('.content').toggleClass('no-sidebar');
+    });
 })( jQuery );
