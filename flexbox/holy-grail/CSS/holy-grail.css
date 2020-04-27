@@ -16,6 +16,7 @@
 .sidebar {
 	padding: .5em 1.4em 1em;
 	background: hsl(0, 0%, 90%);
+	overflow: hidden; /* To hide the sidebar item when hide class is applied */
 }
 
 .example-menu ul {
@@ -108,6 +109,11 @@
 
 	.no-sidebar {
 		flex-direction: column; /* Makes flex direction column so that main content and sidebar are stacked on top of one another */
+	}
+
+	.hide {
+		flex: 0 0 0; /* Grow by a factor of 0, shrink by a factor of 0 and have a flex basis of 0. Thus hiding the item. But won't hide completely if the item has any padding */
+		padding: 0; /* To remove padding */
 	}
 
 }

@@ -84,3 +84,6 @@
 ### 5.2 Changing from Holy Grail to Vertical Display
 1. Add JS code to sidebar-switcher.js
 2. Change `flex-direction: column;` for content and sidebar to stack on top of one another.
+
+### 5.3 Hiding and Showing the Sidebar
+1. Hiding: `flex: 0 0 0; padding: 0; overflow: hidden;`

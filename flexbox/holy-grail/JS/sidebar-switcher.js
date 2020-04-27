@@ -1,4 +1,5 @@
 ( function( $ ) { 
+
     $('a.sidebar-left-toggle').click(function() {
         if(!$('.sidebar').hasClass('sidebar-left')) {
             $('.sidebar').addClass('sidebar-left');
@@ -20,4 +21,9 @@
         // } // alternative: toggleClass
         $('.content').toggleClass('no-sidebar');
     });
+
+    $('a.hide-sidebar-toggle').click(function() {
+        $('.sidebar').toggleClass('hide');
+    }); // Hide/Show sidebar
+
 })( jQuery );
