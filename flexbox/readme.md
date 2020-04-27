@@ -68,3 +68,10 @@
 
 ### 4.2 Holy Grail layout with Flexbox
 1. Base html: holy-grail.html, Base CSS: style-holy-grail.css
+2. Default flex item directions: horizontal. Can be changed to column using: `flex-direction: column`
+3. `flex: 1 1 auto`: To grow and fill the empty space.
+
+### 4.3 Changing the layout with Flexbox
+1. To change direction: `flex-direction: column-reverse` or `flex-direction: row-reverse`
+2. **Order**: By default flex has on order of 0 which means it will display in the order they are written in HTML markup.
+3. Add a lower order for sidebar. So, it will come before main-area.

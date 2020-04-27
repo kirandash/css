@@ -59,6 +59,7 @@
 
 	.main-area {
 		flex: 1 1 auto; /* Grow by a factor of 1, shrink by a factor of 1 with min width auto. Means, this section will grow to fill the remaining empty space. */
+		order: 1;
 	}
 
 	.post-content {
@@ -68,6 +69,7 @@
 
 	.sidebar {
 		flex: 0 0 12em; /* Grow by a factor of 0, shrink by a factor of 0 while maintaining a base or min width of 12em regardless of page width */
+		order: 0; /* Makes sidebar come before main-area */
 	}
 
 }
