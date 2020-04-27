@@ -75,3 +75,8 @@
 1. To change direction: `flex-direction: column-reverse` or `flex-direction: row-reverse`
 2. **Order**: By default flex has on order of 0 which means it will display in the order they are written in HTML markup.
 3. Add a lower order for sidebar. So, it will come before main-area.
+
+## 5. Handling Control to user
+### 5.1 Sidebar position switching
+1. Add sidebar-switcher.js for adding JS code to add/remove classes.
+2. Change `order` to change position of sidebar.
